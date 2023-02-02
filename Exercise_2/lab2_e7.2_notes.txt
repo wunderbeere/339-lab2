@@ -1,0 +1,6 @@
+7.2
+time base = 50
+Frequency on pin 3 = 489 Hz for value = 130
+Low pass filter on pin 9 is better at blocking ripples(shape is flat), they are more prevalent on pin 10
+Varying frequency for pin 10: for lower frequencies(min = 30 hz), the ripples were very large and chaotic. For higher frequencies(max = 31250 hz), the ripples were not present or only lightly present. 
+This is expected behaviour from pin 10, which is a low-pass filter because higher frequencies are smoothed out. 
