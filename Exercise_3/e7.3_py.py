@@ -25,6 +25,7 @@ while (dataRead==False):
     serialPort.write(bytes([value]))
     t.sleep(0.1)
     inByte = serialPort.in_waiting
+    print("inbyte", inByte)
 #This loop reads in data from the array until byteCount reaches the array size (arraySize)
     byteCount=0
     while ((inByte>0)&(byteCount<arraySize)):
